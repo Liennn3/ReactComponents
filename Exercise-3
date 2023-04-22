@@ -16,8 +16,14 @@ function myString(){
 
   return(
     <View style={styles.container}>
-    <TextInput style={styles.border} value={str} onChangeText={handleString} placeholder="Enter a String" />
-    <Button title="Reverse" onPress={handleReverse} />
+    <TextInput style={styles.border} 
+      value={str} 
+      onChangeText={handleString} 
+      placeholder="Enter a String" 
+    />
+    <Button title="Reverse" 
+      onPress={handleReverse} 
+    />
     </View>
   );
 }
