@@ -1,0 +1,20 @@
+import React, {useState} from 'react';
+
+function myString(){
+
+  const [str, setInput] = useState ("");
+  const reverse = (str.split("").reverse().join(""));
+
+  const handleString = event => {
+    setInput(event.target.value);
+  }
+
+  return(
+    <div>
+    <input type="text" value={str} onChange={handleString} placeholder="Enter a String"/>
+    <p>Result: {reverse}</p>
+    </div>
+  );
+}
+
+export default myString;
